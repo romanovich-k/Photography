@@ -147,6 +147,11 @@ body {
     line-height: 24px;
   }
 }
+@media (max-width: 550px) {
+  .text {
+    line-height: 22px;
+  }
+}
 
 .btn {
   display: block;
@@ -657,8 +662,22 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 80px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 90px;
   margin: 0 auto;
+}
+.portfolio__item-link {
+  font-size: 18px;
+  color: #f2c200;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.portfolio__item-link:hover {
+  color: #f7f7fc;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 .portfolio__album-row {
   display: -webkit-box;
@@ -668,12 +687,31 @@ body {
 
 .popup__link {
   display: block;
+  margin: 0 auto 20px;
 }
 
 /*-------------------*/
 .blog .section__text {
   width: 26%;
   margin-bottom: -100px;
+}
+@media (max-width: 1000px) {
+  .blog .section__text {
+    width: 27%;
+    margin-bottom: -90px;
+  }
+}
+@media (max-width: 767px) {
+  .blog .section__text {
+    width: 50%;
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 550px) {
+  .blog .section__text {
+    width: 90%;
+    margin-bottom: 30px;
+  }
 }
 .blog__content {
   display: -webkit-box;
@@ -684,8 +722,17 @@ body {
           justify-content: space-between;
   overflow: hidden;
 }
+@media (max-width: 767px) {
+  .blog__content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 .blog__post {
-  width: 30%;
+  width: 31%;
   max-height: 600px;
   background-color: #ffffff;
   -webkit-transform: scale(0);
@@ -696,6 +743,12 @@ body {
   margin-top: 150px;
   padding-bottom: 30px;
 }
+@media (max-width: 767px) {
+  .blog__post:nth-child(2) {
+    margin-top: 12px;
+    padding-bottom: 20px;
+  }
+}
 .blog__post.element-show {
   opacity: 1;
   -webkit-transform: scale(1);
@@ -703,14 +756,42 @@ body {
   -webkit-transition: all 3s;
   transition: all 3s;
 }
+@media (max-width: 767px) {
+  .blog__post {
+    width: 45%;
+    margin: 12px;
+  }
+}
+@media (max-width: 550px) {
+  .blog__post {
+    width: 87%;
+    margin: 10px;
+    padding-bottom: 20px;
+  }
+}
 .blog__img-container {
   margin-bottom: 28px;
+}
+@media (max-width: 1000px) {
+  .blog__img-container {
+    margin-bottom: 20px;
+  }
 }
 .blog__img {
   width: 100%;
 }
 .blog__post-info {
   padding: 0 30px;
+}
+@media (max-width: 1000px) {
+  .blog__post-info {
+    padding: 0 20px;
+  }
+}
+@media (max-width: 767px) {
+  .blog__post-info {
+    padding: 0 15px;
+  }
 }
 .blog__post-title {
   display: block;
@@ -727,6 +808,17 @@ body {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
+@media (max-width: 1000px) {
+  .blog__post-title {
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+}
+@media (max-width: 767px) {
+  .blog__post-title {
+    font-size: 16px;
+  }
+}
 .blog__post-category {
   font-size: 15px;
   font-weight: 700;
@@ -741,6 +833,16 @@ body {
   display: block;
   margin: 26px auto;
   text-align: justify;
+}
+@media (max-width: 1000px) {
+  .blog__post-text {
+    margin: 20px auto;
+  }
+}
+@media (max-width: 767px) {
+  .blog__post-text {
+    font-size: 14px;
+  }
 }
 .blog__post-btn {
   padding: 0 5px;
@@ -763,8 +865,28 @@ body {
   color: #ffffff;
 }
 .feedback__form {
-  width: 30%;
+  width: 32%;
   margin: 0 auto;
+}
+@media (max-width: 1200px) {
+  .feedback__form {
+    width: 37%;
+  }
+}
+@media (max-width: 970px) {
+  .feedback__form {
+    width: 42%;
+  }
+}
+@media (max-width: 767px) {
+  .feedback__form {
+    width: 47%;
+  }
+}
+@media (max-width: 570px) {
+  .feedback__form {
+    width: 65%;
+  }
 }
 .feedback__form-input {
   display: block;
@@ -772,6 +894,27 @@ body {
   height: 45px;
   margin-bottom: 22px;
   padding-left: 25px;
+  background-color: rgba(255, 255, 255, 0.65);
+}
+.feedback__form-input::-webkit-input-placeholder {
+  color: #2b2d5c;
+}
+.feedback__form-input::-moz-placeholder {
+  color: #2b2d5c;
+}
+.feedback__form-input:-ms-input-placeholder {
+  color: #2b2d5c;
+}
+.feedback__form-input::-ms-input-placeholder {
+  color: #2b2d5c;
+}
+.feedback__form-input::placeholder {
+  color: #2b2d5c;
+}
+@media (max-width: 570px) {
+  .feedback__form-input {
+    margin-bottom: 15px;
+  }
 }
 .feedback__form-textarea {
   display: block;
@@ -779,6 +922,8 @@ body {
   height: 145px;
   margin-bottom: 25px;
   padding: 15px 0 0 25px;
+  color: #2b2d5c;
+  background-color: rgba(255, 255, 255, 0.65);
 }
 .feedback__form-btn {
   margin: 0 auto;
