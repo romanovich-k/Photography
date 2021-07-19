@@ -381,7 +381,7 @@ body {
 }
 
 /*--------------------------*/
-@media (min-width: 767px) {
+@media (min-width: 970px) {
   .about {
     height: 100vh;
   }
@@ -642,8 +642,8 @@ body {
 .portfolio__album.element-show {
   -webkit-transform: translateY(0%);
           transform: translateY(0%);
-  -webkit-transition: all 2s;
-  transition: all 2s;
+  -webkit-transition: all 1.5s;
+  transition: all 1.5s;
 }
 .portfolio__album-content {
   display: -webkit-box;
@@ -857,8 +857,8 @@ body {
   display: block;
   margin-bottom: 24px;
   font-size: 20px;
-  font-weight: 700;
-  text-align: justify;
+  font-weight: 600;
+  text-align: center;
   color: #2b2d5c;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
