@@ -149,6 +149,7 @@ body {
 }
 @media (max-width: 550px) {
   .text {
+    font-size: 14px;
     line-height: 22px;
   }
 }
@@ -597,10 +598,31 @@ body {
           justify-content: space-between;
   overflow: hidden;
 }
+@media (max-width: 970px) {
+  .portfolio__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 .portfolio__info {
   width: 42%;
   padding: 60px 20px;
   background-color: #f2c200;
+}
+@media (max-width: 970px) {
+  .portfolio__info {
+    width: 90%;
+  }
+}
+@media (max-width: 767px) {
+  .portfolio__info {
+    padding: 35px 10px;
+  }
 }
 .portfolio__text {
   display: block;
@@ -611,6 +633,11 @@ body {
   width: 58%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+}
+@media (max-width: 970px) {
+  .portfolio__album {
+    width: 90%;
+  }
 }
 .portfolio__album.element-show {
   -webkit-transform: translateY(0%);
@@ -649,6 +676,11 @@ body {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
+@media (max-width: 767px) {
+  .portfolio__album-item {
+    margin: 0 0 10px 10px;
+  }
+}
 .portfolio__img {
   width: 100%;
 }
@@ -683,6 +715,16 @@ body {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
+@media (max-width: 970px) {
+  .portfolio__album-column {
+    margin-left: -20px;
+  }
+}
+@media (max-width: 767px) {
+  .portfolio__album-column {
+    margin-left: -10px;
+  }
+}
 .portfolio__album-row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -690,6 +732,7 @@ body {
 }
 .portfolio__album-btn {
   margin: 0 auto;
+  padding-top: 17px;
   color: #2b2d5c;
   background-color: #ffcc00;
   -webkit-transition: all 0.5s;
