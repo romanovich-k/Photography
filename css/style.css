@@ -1053,6 +1053,7 @@ body {
     display: block;
     margin: 15px 0;
     font-size: 20px;
+    color: #2b2d5c;
   }
 }
 
@@ -1123,7 +1124,7 @@ body {
     overflow: auto;
     -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
-    background-color: rgba(242, 194, 0, 0.8);
+    background-color: rgba(242, 194, 0, 0.9);
     padding-top: 180px;
     z-index: 1;
   }
