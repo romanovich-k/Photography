@@ -631,8 +631,8 @@ body {
 }
 .portfolio__album {
   width: 58%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  -webkit-transform: scale(0);
+          transform: scale(0);
 }
 @media (max-width: 970px) {
   .portfolio__album {
@@ -640,10 +640,10 @@ body {
   }
 }
 .portfolio__album.element-show {
-  -webkit-transform: translateY(0%);
-          transform: translateY(0%);
-  -webkit-transition: all 1.5s;
-  transition: all 1.5s;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all 2s;
+  transition: all 2s;
 }
 .portfolio__album-content {
   display: -webkit-box;
