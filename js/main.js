@@ -80,19 +80,6 @@ $('.popup-bg').click(function (e) {
   }
 });
 
-//Спойлеры
-
-$(document).ready(function() {
-	$('.block__title').click(function(event) {
-		if($('.block').hasClass('one')){
-			$('.block__title').not($(this)).removeClass('active');
-			$('.block__content').not($(this).next()).slideUp(300);
-		}
-		$(this).toggleClass('active').next().slideToggle(300);
-	});
-});
-
-
 
 
 
@@ -132,16 +119,4 @@ $('html,body').animate(
   });
 });
 
-
-
-//Плавающая шапка
-window.addEventListener("scroll", function(){
-  let header = document.querySelector("header");
-  header.classList.toggle("sticky", window.scrollY > 190);
-});
-
-
-//Дата в форме
-let today = new Date().toISOString().substr(0, 10);
-document.querySelector("#date").value = today;
 
