@@ -960,8 +960,8 @@ body {
   width: 32%;
   margin: 0 auto;
   opacity: 0;
-  -webkit-transform: translateY(100%);
-          transform: translateY(100%);
+  -webkit-transform: scale(0);
+          transform: scale(0);
 }
 @media (max-width: 1200px) {
   .feedback__form {
@@ -985,10 +985,10 @@ body {
 }
 .feedback__form.element-show {
   opacity: 1;
-  -webkit-transition: all 1s;
-  transition: all 1s;
-  -webkit-transform: translateY(0%);
-          transform: translateY(0%);
+  -webkit-transition: all 1.3s;
+  transition: all 1.3s;
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 .feedback__form-input {
   display: block;
