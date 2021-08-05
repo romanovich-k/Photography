@@ -776,6 +776,11 @@ body {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
+@media (max-width: 767px) {
+  .portfolio__album-btn {
+    padding-top: 14px;
+  }
+}
 
 .popup__link {
   display: block;
